@@ -32,14 +32,14 @@ import (
 	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/grpc/resolver"
 
-	"github.com/nezhahq/agent/model"
-	fm "github.com/nezhahq/agent/pkg/fm"
-	"github.com/nezhahq/agent/pkg/monitor"
-	"github.com/nezhahq/agent/pkg/processgroup"
-	"github.com/nezhahq/agent/pkg/pty"
-	"github.com/nezhahq/agent/pkg/util"
-	utlsx "github.com/nezhahq/agent/pkg/utls"
-	pb "github.com/nezhahq/agent/proto"
+	"github.com/GreenTeodoro839/agent-v0/model"
+	fm "github.com/GreenTeodoro839/agent-v0/pkg/fm"
+	"github.com/GreenTeodoro839/agent-v0/pkg/monitor"
+	"github.com/GreenTeodoro839/agent-v0/pkg/processgroup"
+	"github.com/GreenTeodoro839/agent-v0/pkg/pty"
+	"github.com/GreenTeodoro839/agent-v0/pkg/util"
+	utlsx "github.com/GreenTeodoro839/agent-v0/pkg/utls"
+	pb "github.com/GreenTeodoro839/agent-v0/proto"
 )
 
 // Agent 运行时参数。如需添加新参数，记得同时在 service.go 中添加
@@ -474,9 +474,9 @@ func doSelfUpdate(useLocalVersion bool) {
 	var latest *selfupdate.Release
 	var err error
 	if monitor.CachedCountryCode != "cn" && !agentCliParam.UseGiteeToUpgrade {
-		latest, err = selfupdate.UpdateSelf(v, "nezhahq/agent")
+		latest, err = selfupdate.UpdateSelf(v, "GreenTeodoro839/agent-v0")
 	} else {
-		latest, err = selfupdate.UpdateSelfGitee(v, "naibahq/agent")
+		latest, err = selfupdate.UpdateSelfGitee(v, "GreenTeodoro839/agent-v0")
 	}
 	if err != nil {
 		printf("更新失败: %v", err)

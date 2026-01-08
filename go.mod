@@ -1,4 +1,4 @@
-module github.com/nezhahq/agent
+module github.com/GreenTeodoro839/agent-v0
 
 go 1.20
 

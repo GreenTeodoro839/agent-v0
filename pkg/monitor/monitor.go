@@ -21,10 +21,10 @@ import (
 	"github.com/shirou/gopsutil/v4/process"
 	"github.com/shirou/gopsutil/v4/sensors"
 
-	"github.com/nezhahq/agent/model"
-	"github.com/nezhahq/agent/pkg/gpu"
-	gpustat "github.com/nezhahq/agent/pkg/gpu/stat"
-	"github.com/nezhahq/agent/pkg/util"
+	"github.com/GreenTeodoro839/agent-v0/model"
+	"github.com/GreenTeodoro839/agent-v0/pkg/gpu"
+	gpustat "github.com/GreenTeodoro839/agent-v0/pkg/gpu/stat"
+	"github.com/GreenTeodoro839/agent-v0/pkg/util"
 )
 
 var (

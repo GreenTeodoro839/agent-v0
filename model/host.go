@@ -1,7 +1,7 @@
 package model
 
 import (
-	pb "github.com/nezhahq/agent/proto"
+	pb "github.com/GreenTeodoro839/agent-v0/proto"
 )
 
 type SensorTemperature struct {
